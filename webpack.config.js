@@ -16,7 +16,20 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
+  plugins: [
+    new UglifyJsPlugin({ sourceMap: true }),
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+    inject: 'body',
+    template: './src/index.html',
+    filename: 'index.html',
+    minify: {
+      removeComments: true,
+      collapseWhitespace: true
+    }
+  }),
 
+],
   module: {
     rules: [
 
@@ -72,19 +85,6 @@ module.exports = {
     ]
   },
 
-  plugins: [
-    new UglifyJsPlugin(),
-    new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({
-    inject: 'body',
-    template: './src/index.html',
-    filename: 'index.html',
-    minify: {
-      removeComments: true,
-      collapseWhitespace: true
-    }
-  }),
 
-  ]
 
 };
