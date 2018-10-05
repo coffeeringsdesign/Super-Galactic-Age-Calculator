@@ -1,13 +1,9 @@
 export default class Visitor {
-  constructor(birthdate, age) {
-    this.birthdate = birthDate;
-    this.age = age;
+  constructor(ageInput) {
+    // add back in lifeExpectancyInput
+    this.earthAge = ageInput;
+    // this.mercuryAge = mercuryAge;
+    // this.venusAge = venusAge;
+    // this.jupiterAge = jupiterAge;
   };
-
-  earthAge() {
-    let birthday = birthDate.split("-").join(", ");
-    let dateBirth = new Date(birthday)
-    let currentDate = new Date();
-    let userAge = dateBirth - currentDate;
-  }
 }

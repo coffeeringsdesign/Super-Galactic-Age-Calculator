@@ -7,11 +7,9 @@ $(document).ready(function(){
 
   $("#userDateForm").submit(function() {
     event.preventDefault();
-    let birthDate = $("input[type='date']").val();
-    let visitor1 = new Visitor(birthDate);
-    let currentDate = new Date();
-    console.log(currentDate);
-    // let lifeExpectancy = $("input[type='text']").val();
+    let ageInput = $("input[type='number']").val();
+    let lifeExpectancyInput = $("input[type='text']").val();
+    let visitor1 = new Visitor(ageInput, lifeExpectancyInput);
 
 
     $("#answer").text(visitor1);
