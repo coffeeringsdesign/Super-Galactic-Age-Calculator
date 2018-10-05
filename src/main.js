@@ -11,6 +11,7 @@ $(document).ready(function(){
     const ageInput = $("input[type='number']").val();
     const lifeExpectancyInput = $("input[type='text']").val();
     let visitor1 = new Visitor(ageInput, lifeExpectancyInput);
+    $(".agesonPlanets").show();
 
     $("#answer1").text(visitor1.earthAge);
     $("#answer2").text(visitor1.mercuryAge);

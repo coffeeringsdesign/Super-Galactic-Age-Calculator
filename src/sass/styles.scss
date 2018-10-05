@@ -1,7 +1,77 @@
-.yearsLeftonPlanets {
-  display: none;
+$darkGrey: #46494C;
+$greyBlue: #4C5C68;
+$teal: #1985A1;
+$lightGrey: #C5C3C6;
+$medGrey: #DCDCDD;
+$fancyFont: 'Cute Font', cursive;
+
+@mixin darkGreyBorders {
+  border: 5px $darkGrey solid;
+  // border-top: 1px;
+  border-bottom: .5px;
+  border-radius: 10px;
+  padding: .5em 0em;
 }
 
-.yearsPastExpectation {
+body {
+  background-image: url(https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2018/universe.jpg);
+  height: 100vh;
+}
+
+.mainContent {
+  margin-top: 4em;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 3em 1em;
+  font-family: $fancyFont;
+  color: $medGrey;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  color: $teal;
+  text-align: center;
+  @include darkGreyBorders;
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+#userDateForm {
+  text-align: center;
+  .formField {
+    @include darkGreyBorders;
+    padding-bottom: 2em;
+    margin: 4em 0em;
+  }
+  input {
+    width: 75%;
+    background-color: $greyBlue;
+    border: 0;
+    border-radius: 10px;
+    color: $lightGrey;
+    font-size: 3em;
+    text-align: center;
+  }
+  button {
+    font-size: 2em;
+    color: $darkGrey;
+    background-color: $teal;
+    border-radius: 10px;
+    padding: 0em 1em;
+    border: 0;
+    margin-bottom: 1em;
+  }
+}
+
+.yearsLeftonPlanets, .yearsPastExpectation, .agesonPlanets {
   display: none;
+  text-align: center;
+  @include darkGreyBorders;
+  margin: 2em 0em;
 }
