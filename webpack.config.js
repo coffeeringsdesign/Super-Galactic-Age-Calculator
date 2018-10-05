@@ -5,10 +5,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
 
-  entry: './src/index.js',
+  entry: './src/main.js',
 
   output: {
-    filename: 'main.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
 
@@ -56,7 +56,7 @@ module.exports = {
           'html-loader'
         ]
       },
-      
+
       {
         test: /\.js$/,
         exclude: [

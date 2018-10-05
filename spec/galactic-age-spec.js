@@ -1,6 +1,7 @@
 desicribe ('interstellar age calculator', function() {
   it('should test if a visitor enters their date of birth it should return their age in earth years') {
-    let dateofBirth = ""
-  }
+    let dateofBirth = "1982-07-27";
+    expect(earthAge(dateofBirth)).toEqual(36);
+  });
 
 })
