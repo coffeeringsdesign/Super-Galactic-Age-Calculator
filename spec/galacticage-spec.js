@@ -33,22 +33,22 @@ describe ('AgeCalculator', function() {
 
   it('should test if a visitor enters their age and life expectancy it determines how many mercury years left they left', function() {
     let visitor1 = new Visitor(24, 99);
-    expect(visitor1.mercuryLifeRemaining).toEqual(75);
+    expect(visitor1.mercuryLifeRemaining).toEqual(visitor1.earthLifeRemaining/.24);
   });
 
   it('should test if a visitor enters their age and life expectancy it determines how many earth years left they left', function() {
     let visitor1 = new Visitor(24, 99);
-    expect(visitor1.venusLifeRemaining).toEqual(75);
+    expect(visitor1.venusLifeRemaining).toEqual(visitor1.earthLifeRemaining/.62);
   });
 
   it('should test if a visitor enters their age and life expectancy it determines how many earth years left they left', function() {
     let visitor1 = new Visitor(24, 99);
-    expect(visitor1.marsLifeRemaining).toEqual(75);
+    expect(visitor1.marsLifeRemaining).toEqual(visitor1.earthLifeRemaining/1.88);
   });
 
   it('should test if a visitor enters their age and life expectancy it determines how many earth years left they left', function() {
     let visitor1 = new Visitor(24, 99);
-    expect(visitor1.jupiterLifeRemaining).toEqual(75);
+    expect(visitor1.jupiterLifeRemaining).toEqual(visitor1.earthLifeRemaining/11.86);
   });
 
 

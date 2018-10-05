@@ -18,6 +18,11 @@ $(document).ready(function(){
     $("#answer4").text(visitor1.marsAge);
     $("#answer5").text(visitor1.jupiterAge);
 
+    $("#answer6").text(visitor1.earthLifeRemaining);
+    $("#answer7").text(visitor1.mercuryLifeRemaining);
+    $("#answer8").text(visitor1.venusLifeRemaining);
+    $("#answer9").text(visitor1.marsLifeRemaining);
+    $("#answer10").text(visitor1.jupiterLifeRemaining);
 
   })
 });
