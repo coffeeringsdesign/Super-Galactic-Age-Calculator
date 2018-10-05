@@ -7,13 +7,16 @@ $(document).ready(function(){
 
   $("#userDateForm").submit(function() {
     event.preventDefault();
-    let ageInput = $("input[type='number']").val();
-    let lifeExpectancyInput = $("input[type='text']").val();
+    const ageInput = $("input[type='number']").val();
+    const lifeExpectancyInput = $("input[type='text']").val();
     let visitor1 = new Visitor(ageInput, lifeExpectancyInput);
 
 
-    $("#answer").text(visitor1);
-
+    $("#answer1").text(visitor1.earthAge);
+    $("#answer2").text(visitor1.mercuryAge);
+    $("#answer3").text(visitor1.venusAge);
+    $("#answer4").text(visitor1.marsAge);
+    $("#answer5").text(visitor1.jupiterAge);
 
 
   })
