@@ -1,7 +1,8 @@
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './sass/styles.scss';
 import $ from 'jquery';
 import Visitor from './userObject.js';
-
 
 $(document).ready(function(){
 
@@ -10,7 +11,6 @@ $(document).ready(function(){
     const ageInput = $("input[type='number']").val();
     const lifeExpectancyInput = $("input[type='text']").val();
     let visitor1 = new Visitor(ageInput, lifeExpectancyInput);
-
 
     $("#answer1").text(visitor1.earthAge);
     $("#answer2").text(visitor1.mercuryAge);
@@ -34,8 +34,5 @@ $(document).ready(function(){
     $("#answer13").text(Math.abs(visitor1.venusLifeRemaining));
     $("#answer14").text(Math.abs(visitor1.marsLifeRemaining));
     $("#answer15").text(Math.abs(visitor1.jupiterLifeRemaining));
-
-
-
   })
 });
