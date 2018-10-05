@@ -63,15 +63,15 @@ Using Command Line:
 * _Example Input: July 27, 1919, 60_
 * _Example Output: 159.5_
 
-10. When a visitor enters their date of birth and life expectancy into a form, if their Mercury life expectancy is exceeded they get the years they have lived past it returned:
+10. When a visitor enters their date of birth and life expectancy into a form, if their Venus life expectancy is exceeded they get the years they have lived past it returned:
 * _Example Input: July 27, 1919, 60_
 * _Example Output: 89_
 
-11. When a visitor enters their date of birth and life expectancy into a form, if their Mercury life expectancy is exceeded they get the years they have lived past it returned:
+11. When a visitor enters their date of birth and life expectancy into a form, if their Mars life expectancy is exceeded they get the years they have lived past it returned:
 * _Example Input: July 27, 1919, 60_
 * _Example Output: 20_
 
-12. When a visitor enters their date of birth and life expectancy into a form, if their Mercury life expectancy is exceeded they get the years they have lived past it returned:
+12. When a visitor enters their date of birth and life expectancy into a form, if their Jupiter life expectancy is exceeded they get the years they have lived past it returned:
 * _Example Input: July 27, 1919, 60_
 * _Example Output: 5_
 
