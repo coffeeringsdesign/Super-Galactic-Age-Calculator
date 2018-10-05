@@ -1,3 +1,4 @@
 import './sass/styles.scss';
-
-console.log("hey!")
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
