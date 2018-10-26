@@ -1,3 +1,5 @@
+![Kendra Kelly Logo](/kkgithub.png)
+
 # Galactic Age Calculator
 
 #### By _**Kendra Kelly**_
